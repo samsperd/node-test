@@ -15,7 +15,7 @@ const server = http.createServer(function (req, res) {
         slackUsername: "slickstubborn",
         backend: true,
         age: 25,
-        bio: "I'm a software engineer who has passion for using algorithms to solve problems"
+        bio: "I'm a software engineer who has a passion for using algorithms to solve problems"
     }
 
 
