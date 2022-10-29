@@ -2,6 +2,8 @@ const http = require('http')
 
 const fs = require('fs')
 
+const port = 3000
+
 const server = http.createServer(function (req, res) {
     console.log('Request was made: ' + req.url);
 
@@ -20,4 +22,6 @@ const server = http.createServer(function (req, res) {
     res.end(JSON.stringify(myObj))
 })
 
-server.listen(3000, '127.0.0.1')
+server.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+})
